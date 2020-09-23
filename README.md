@@ -1,1 +1,1 @@
-# retina-oct-images-classification
+# Detecting Retina Damage From Optical Coherence Tomography (OCT) Images
