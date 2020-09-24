@@ -83,6 +83,8 @@ The model achieved an accuracy of 84.96%, 87.5%, 85.54% on train dataset, valida
 The `training_csv.log` file contains epoch wise training details.
 
 ### Evaluation on Test Dataset
+![Confusion Matrix](/assets/confusion_matrix.png)
+
 ```
               precision    recall  f1-score   support
 
@@ -95,7 +97,6 @@ The `training_csv.log` file contains epoch wise training details.
    macro avg       0.89      0.86      0.85       968
 weighted avg       0.89      0.86      0.85       968
 ```
-<p><img align="left" width="561" height="500" src= "/assets/confusion_matrix.png"></p>
 
 ## References
 * Data- https://data.mendeley.com/datasets/rscbjbr9sj/2
