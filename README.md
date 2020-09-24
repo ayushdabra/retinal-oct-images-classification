@@ -2,18 +2,12 @@
 ## Context
 Retinal optical coherence tomography (OCT) is an imaging technique used to capture high-resolution cross sections of the retinas of living patients. Approximately 30 million OCT scans are performed each year, and the analysis and interpretation of these images takes up a significant amount of time (Swanson and Fujimoto, 2017).
 <p align="center">
-  <img src="https://i.imgur.com/fSTeZMd.png">
+  <img src="https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/dataset_classes.png">
 </p>
 
 <p align="center">Figure 1. Representative Optical Coherence Tomography Images and the Workflow Diagram [Kermany et. al. 2018]</p>
 
 (A) (Far left) choroidal neovascularization (CNV) with neovascular membrane (white arrowheads) and associated subretinal fluid (arrows). (Middle left) Diabetic macular edema (DME) with retinal-thickening-associated intraretinal fluid (arrows). (Middle right) Multiple drusen (arrowheads) present in early AMD. (Far right) Normal retina with preserved foveal contour and absence of any retinal fluid/edema.
-
-## Content
-* The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (NORMAL,CNV,DME,DRUSEN). There are 84,495 X-Ray images (JPEG) and 4 categories (NORMAL,CNV,DME,DRUSEN).
-* Images are labeled as (disease)-(randomized patient ID)-(image number by this patient) and split into 4 directories: CNV, DME, DRUSEN, and NORMAL.
-
-* Optical coherence tomography (OCT) images (Spectralis OCT, Heidelberg Engineering, Germany) were selected from retrospective cohorts of adult patients from the Shiley Eye Institute of the University of California San Diego, the California Retinal Research Foundation, Medical Center Ophthalmology Associates, the Shanghai First People’s Hospital, and Beijing Tongren Eye Center between July 1, 2013 and March 1, 2017.
 
 ## Getting Started
 The `vgg16-for-retinal-oct-dataset.ipynb` notebook can be directly run on Kaggle after loading the dataset in the Kaggle Kernel. Use Kaggle's Nvidia Tesla P100 GPU for faster training and evaluation.
@@ -22,6 +16,7 @@ For running the notebook on your local machine, following pre-requisites must be
 - NumPy
 - Pandas
 - Scikit-image
+- Seaborn
 - IPython
 - Matplotlib
 - Tensorflow 2.0
@@ -47,11 +42,23 @@ sudo apt install nvidia-driver-430
 https://www.nvidia.com/Download/index.aspx
 ```
 ## Dataset
-The dataset has four classes:
-1. CNV
-2. DME
-3. DRUSEN
-4. NORMAL
+* The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (NORMAL,CNV,DME,DRUSEN). There are 84,495 X-Ray images (JPEG) and 4 categories (NORMAL,CNV,DME,DRUSEN).
+* Images are labeled as (disease)-(randomized patient ID)-(image number by this patient) and split into 4 directories: CNV, DME, DRUSEN, and NORMAL.
+
+* Optical coherence tomography (OCT) images (Spectralis OCT, Heidelberg Engineering, Germany) were selected from retrospective cohorts of adult patients from the Shiley Eye Institute of the University of California San Diego, the California Retinal Research Foundation, Medical Center Ophthalmology Associates, the Shanghai First People’s Hospital, and Beijing Tongren Eye Center between July 1, 2013 and March 1, 2017.
+### Sample Images
+<p align="center">
+  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/normal_eye.png">Normal
+</p>
+<p align="center">
+  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/cnv_eye.png">Choroidal Neo-Vascularization (CNV)
+</p>
+<p align="center">
+  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/dme_eye.png">Diabetic Macular Edema (DME)
+</p>
+<p align="center">
+  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/drusen_eye.png">Drusen
+</p>
 
 ## References
 * Data- https://data.mendeley.com/datasets/rscbjbr9sj/2
