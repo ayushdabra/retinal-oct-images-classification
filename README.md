@@ -48,16 +48,7 @@ https://www.nvidia.com/Download/index.aspx
 * Optical coherence tomography (OCT) images (Spectralis OCT, Heidelberg Engineering, Germany) were selected from retrospective cohorts of adult patients from the Shiley Eye Institute of the University of California San Diego, the California Retinal Research Foundation, Medical Center Ophthalmology Associates, the Shanghai First People’s Hospital, and Beijing Tongren Eye Center between July 1, 2013 and March 1, 2017.
 ### Sample Images
 <p align="center">
-  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/normal_eye.png">Normal
-</p>
-<p align="center">
-  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/cnv_eye.png">Choroidal Neo-Vascularization (CNV)
-</p>
-<p align="center">
-  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/dme_eye.png">Diabetic Macular Edema (DME)
-</p>
-<p align="center">
-  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/drusen_eye.png">Drusen
+  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/dataset_images.png">
 </p>
 
 ## References
