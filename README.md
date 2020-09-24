@@ -2,7 +2,7 @@
 ## Context
 Retinal optical coherence tomography (OCT) is an imaging technique used to capture high-resolution cross sections of the retinas of living patients. Approximately 30 million OCT scans are performed each year, and the analysis and interpretation of these images takes up a significant amount of time (Swanson and Fujimoto, 2017).
 <p align="center">
-  <img src="https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/dataset_classes.png">
+  <img src="/assets/dataset_classes.png">
 </p>
 
 <p align="center">Figure 1. Representative Optical Coherence Tomography Images and the Workflow Diagram [Kermany et. al. 2018]</p>
@@ -48,8 +48,28 @@ https://www.nvidia.com/Download/index.aspx
 * Optical coherence tomography (OCT) images (Spectralis OCT, Heidelberg Engineering, Germany) were selected from retrospective cohorts of adult patients from the Shiley Eye Institute of the University of California San Diego, the California Retinal Research Foundation, Medical Center Ophthalmology Associates, the Shanghai First People’s Hospital, and Beijing Tongren Eye Center between July 1, 2013 and March 1, 2017.
 ### Sample Images
 <p align="center">
-  <img src= "https://github.com/ayushdabra/retina-oct-images-classification/blob/master/assets/dataset_images.png">
+  <img src= "/assets/dataset_images.png">
 </p>
+
+### Image Histogram (Tonal Distribution)
+Histogram of a normal retina image in the train dataset.
+<p align="center">
+  <img src= "/assets/histogram.png">
+</p>
+
+## Aproach
+### Image Data Augmentation
+Data augmentation is done through the following techniques:
+- Rescaling (1./255)
+- Zoom (0.73-0.9)
+- Horizontal Flipping
+- Rotation (10)
+- Width Shifting (0.10)
+- Fill Mode (constant)
+- Height Shifting (0.10)
+- Brightness (0.55-0.9)
+
+<img src= "/assets/augmented_image.png">
 
 ## References
 * Data- https://data.mendeley.com/datasets/rscbjbr9sj/2
