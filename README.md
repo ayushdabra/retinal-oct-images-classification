@@ -15,6 +15,7 @@ The `vgg16-for-retinal-oct-dataset.ipynb` notebook can be directly run on Kaggle
 For running the notebook on your local machine, following pre-requisites must be satisfied:
 - NumPy
 - Pandas
+- Scikit-learn
 - Scikit-image
 - Seaborn
 - IPython
@@ -52,7 +53,7 @@ https://www.nvidia.com/Download/index.aspx
 </p>
 
 ### Image Histogram (Tonal Distribution)
-Histogram of a normal retina image in the train dataset.
+Histogram of a normal retina image in the train dataset:
 <p align="center">
   <img src= "/assets/histogram.png">
 </p>
@@ -69,7 +70,32 @@ Data augmentation is done through the following techniques:
 - Height Shifting (0.10)
 - Brightness (0.55-0.9)
 
-<img src= "/assets/augmented_image.png">
+<p><img src= "/assets/augmented_image.png"></p>
+
+### Model Details
+Tranfer learning has been used on VGG16 CNN Architecture pre-trained on ImageNet dataset, with a custom classifier having a dropout(0.2) layer, and a fully-connected dense(4) layer with softmax activation.
+A detailed layout of the model is available <a href= "/assets/model_plot.png">here.</a>
+
+### Baseline Training Results
+The model achieved an accuracy of 84.96%, 87.5%, 85.54% on train dataset, validation dataset and test dataset respectively.
+<p><img src= "/assets/plot_acc_loss.png"></p>
+
+The `training_csv.log` file contains epoch wise training details.
+
+### Evaluation on Test Dataset
+```
+              precision    recall  f1-score   support
+
+         CNV       0.73      0.99      0.84       242
+         DME       0.99      0.82      0.89       242
+      DRUSEN       0.99      0.61      0.76       242
+      NORMAL       0.83      1.00      0.91       242
+
+    accuracy                           0.86       968
+   macro avg       0.89      0.86      0.85       968
+weighted avg       0.89      0.86      0.85       968
+```
+<p><img align="left" width="561" height="500" src= "/assets/confusion_matrix.png"></p>
 
 ## References
 * Data- https://data.mendeley.com/datasets/rscbjbr9sj/2
