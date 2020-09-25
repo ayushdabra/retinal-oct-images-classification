@@ -43,9 +43,8 @@ sudo apt install nvidia-driver-430
 https://www.nvidia.com/Download/index.aspx
 ```
 ## Dataset
-* The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (NORMAL,CNV,DME,DRUSEN). There are 84,495 X-Ray images (JPEG) and 4 categories (NORMAL,CNV,DME,DRUSEN).
+* The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (NORMAL, CNV, DME, DRUSEN). There are 84,495 X-Ray images (JPEG) and 4 categories (NORMAL, CNV, DME, DRUSEN).
 * Images are labeled as (disease)-(randomized patient ID)-(image number by this patient) and split into 4 directories: CNV, DME, DRUSEN, and NORMAL.
-
 * Optical coherence tomography (OCT) images (Spectralis OCT, Heidelberg Engineering, Germany) were selected from retrospective cohorts of adult patients from the Shiley Eye Institute of the University of California San Diego, the California Retinal Research Foundation, Medical Center Ophthalmology Associates, the Shanghai First People’s Hospital, and Beijing Tongren Eye Center between July 1, 2013 and March 1, 2017.
 ### Sample Images
 <p align="center">
@@ -58,7 +57,7 @@ Histogram of a normal retina image in the train dataset:
   <img src= "/assets/histogram.png">
 </p>
 
-## Aproach
+## Approach
 ### Image Data Augmentation
 Data augmentation is done through the following techniques:
 - Rescaling (1./255)
@@ -74,6 +73,7 @@ Data augmentation is done through the following techniques:
 
 ### Model Details
 Tranfer learning has been used on VGG16 CNN Architecture pre-trained on ImageNet dataset, with a custom classifier having a dropout(0.2) layer, and a fully-connected dense(4) layer with softmax activation.
+
 A detailed layout of the model is available <a href= "/assets/model_plot.png">here.</a>
 
 ### Baseline Training Results
@@ -101,5 +101,5 @@ weighted avg       0.89      0.86      0.85       968
 ## References
 * Data- https://data.mendeley.com/datasets/rscbjbr9sj/2
 * Kermany, Daniel; Zhang, Kang; Goldbaum, Michael (2018), “Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification”, Mendeley Data, V2, doi: 10.17632/rscbjbr9sj.2
-* Daniel S. Kermany, Michael Goldbaum, Wenjia Cai, Carolina C.S. Valentim, Huiying Liang, Sally L. Baxter, Alex McKeown, Ge Yang, Xiaokang Wu, Fangbing Yan, Justin Dong, Made K. Prasadha, Jacqueline Pei, Magdalene Y.L. Ting, Jie Zhu, Christina Li, Sierra Hewett, Jason Dong, Ian Ziyar, Alexander Shi, Runze Zhang, Lianghong Zheng, Rui Hou, William Shi, Xin Fu, Yaou Duan, Viet A.N. Huu, Cindy Wen, Edward D. Zhang, Charlotte L. Zhang, Oulan Li, Xiaobo Wang, Michael A. Singer, Xiaodong Sun, Jie Xu, Ali Tafreshi, M. Anthony Lewis, Huimin Xia, Kang Zhang, <a href= "http://www.cell.com/cell/fulltext/S0092-8674(18)30154-5">"Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning"</a>, Kermany et al., 2018, Cell; February 22, 2018 Elsevier Inc.
-* Keract by Philippe Rémy (@github/philipperemy) used under the IT License Copyright (c) 2019.
+* Daniel S. Kermany, Michael Goldbaum, Wenjia Cai, Carolina C.S. Valentim, Huiying Liang, Sally L. Baxter, Alex McKeown, Ge Yang, Xiaokang Wu, Fangbing Yan, Justin Dong, Made K. Prasadha, Jacqueline Pei, Magdalene Y.L. Ting, Jie Zhu, Christina Li, Sierra Hewett, Jason Dong, Ian Ziyar, Alexander Shi, Runze Zhang, Lianghong Zheng, Rui Hou, William Shi, Xin Fu, Yaou Duan, Viet A.N. Huu, Cindy Wen, Edward D. Zhang, Charlotte L. Zhang, Oulan Li, Xiaobo Wang, Michael A. Singer, Xiaodong Sun, Jie Xu, Ali Tafreshi, M. Anthony Lewis, Huimin Xia, Kang Zhang, "Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning", Kermany et al., 2018, Cell; February 22, 2018 Copyright (c) 2018 Elsevier Inc.<a href= "https://www.cell.com/action/showPdf?pii=S0092-8674%2818%2930154-5"> [PDF]</a>
+* Keract by Philippe Rémy <a href= "https://github.com/philipperemy/keract">(@github/philipperemy)</a> used under the IT License Copyright (c) 2019.
