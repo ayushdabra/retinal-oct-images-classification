@@ -47,9 +47,9 @@ https://www.nvidia.com/Download/index.aspx
 * Images are labeled as (disease)-(randomized patient ID)-(image number by this patient) and split into 4 directories: CNV, DME, DRUSEN, and NORMAL.
 * Optical coherence tomography (OCT) images (Spectralis OCT, Heidelberg Engineering, Germany) were selected from retrospective cohorts of adult patients from the Shiley Eye Institute of the University of California San Diego, the California Retinal Research Foundation, Medical Center Ophthalmology Associates, the Shanghai First People’s Hospital, and Beijing Tongren Eye Center between July 1, 2013 and March 1, 2017.
 ### Sample Images
-<p align="center">
-  <img src= "/assets/dataset_images.jpeg">
-</p>
+|![](/assets/normal_eye.png) NORMAL|![](/assets/cnv_eye.png) CNV|
+:-------------------------:|:-------------------------:
+![](/assets/dme_eye.png) **DME**|![](/assets/drusen_eye.png) **DRUSEN**
 
 ### Image Histogram (Tonal Distribution)
 Histogram of a normal retina image in the train dataset:
