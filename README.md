@@ -1,4 +1,4 @@
-# Detecting Retina Damage From Optical Coherence Tomography (OCT) Images
+# Detecting Retina Damage from Optical Coherence Tomography (OCT) Images
 ## Context
 Retinal Optical Coherence Tomography (OCT) is an imaging technique used to capture high-resolution cross sections of the retinas of living patients. Approximately 30 million OCT scans are performed each year, and the analysis and interpretation of these images takes up a significant amount of time (Swanson and Fujimoto, 2017).
 <p align="center">
@@ -77,6 +77,7 @@ Tranfer learning has been used on VGG16 CNN Architecture pre-trained on ImageNet
 A detailed layout of the model is available <a href= "/assets/model_plot.png">here.</a>
 
 ### Training Results
+
 |Model|Epochs|Train Accuracy|Train Loss| Val Accuracy| Val Loss |
 | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | Baseline | 10 | 85.16 % | 0.4144 | 84.37 % | 0.3519 |
@@ -106,13 +107,14 @@ The `baseline_training_csv.log` and `finetuned_training_csv.log` files contain e
 weighted avg       0.99      0.99      0.99       968
 ```
 
-## Visualization of Activations of Layers
+## Model Layers' Activations Visualization
 |![](/assets/1_block1_conv1.jpeg) block1_conv1|![](/assets/4_block2_conv1.jpeg) block2_conv1|
 :-------------------------:|:-------------------------:
 ![](/assets/7_block3_conv1.jpeg) **block3_conv1**|![](/assets/11_block4_conv1.jpeg) **block4_conv1**
 ![](/assets/15_block5_conv1.jpeg) **block5_conv1**|![](/assets/16_block5_conv2.jpeg) **block5_conv2**
 
-Activation Maps of all layers of the model are available <a href= "/assets/activation_maps">here.</a>
+* Activation Maps of model's layers are available in the <a href= "/activations">`activations`</a> directory.
+* Heatmaps of model's layers are available in the <a href= "/heatmaps">`heatmaps`</a> directory.
 
 ## References
 * Data- https://data.mendeley.com/datasets/rscbjbr9sj/2
