@@ -48,13 +48,13 @@ https://www.nvidia.com/Download/index.aspx
 * Optical coherence tomography (OCT) images (Spectralis OCT, Heidelberg Engineering, Germany) were selected from retrospective cohorts of adult patients from the Shiley Eye Institute of the University of California San Diego, the California Retinal Research Foundation, Medical Center Ophthalmology Associates, the Shanghai First People’s Hospital, and Beijing Tongren Eye Center between July 1, 2013 and March 1, 2017.
 ### Sample Images
 <p align="center">
-  <img src= "/assets/dataset_images.png">
+  <img src= "/assets/dataset_images.jpeg">
 </p>
 
 ### Image Histogram (Tonal Distribution)
 Histogram of a normal retina image in the train dataset:
 <p align="center">
-  <img src= "/assets/histogram.png">
+  <img src= "/assets/histogram.jpeg">
 </p>
 
 ## Approach
@@ -69,7 +69,7 @@ Data augmentation is done through the following techniques:
 - Height Shifting (0.10)
 - Brightness (0.55-0.9)
 
-<p><img src= "/assets/augmented_image.png"></p>
+<p><img src= "/assets/augmented_image.jpeg"></p>
 
 ### Model Details
 Tranfer learning has been used on VGG16 CNN Architecture pre-trained on ImageNet dataset, with a custom classifier having a dropout(0.2) layer, and a fully-connected dense(4) layer with softmax activation.
@@ -89,10 +89,10 @@ A detailed layout of the model is available <a href= "/assets/model_plot.png">he
 The `baseline_training_csv.log` and `finetuned_training_csv.log` files contain epoch wise training details of the baseline model and the finetuned model respectively.
 
 ### Evaluation on Test Dataset
-* #### Confusion Matrix
+#### Confusion Matrix
 ![Confusion Matrix](/assets/confusion_matrix.jpeg)
 
-* #### Classification Report
+#### Classification Report
 ```
               precision    recall  f1-score   support
 
