@@ -10,7 +10,7 @@ Retinal Optical Coherence Tomography (OCT) is an imaging technique used to captu
 (A) (Far left) Choroidal Neo-Vascularization (CNV) with neovascular membrane (white arrowheads) and associated subretinal fluid (arrows). (Middle left) Diabetic Macular Edema (DME) with retinal-thickening-associated intraretinal fluid (arrows). (Middle right) Multiple drusen (arrowheads) present in early AMD. (Far right) Normal retina with preserved foveal contour and absence of any retinal fluid/edema.
 
 ## Getting Started
-The `vgg16-for-retinal-oct-images-dataset.ipynb` notebook can be directly run on Kaggle after loading the dataset in the Kaggle Kernel. Use Kaggle's Nvidia Tesla P100 GPU for faster training and evaluation.
+The <a href= "/vgg16-for-retinal-oct-images-dataset.ipynb">`vgg16-for-retinal-oct-images-dataset.ipynb`</a> notebook can be directly run on Kaggle after loading the dataset in the Kaggle Kernel. Use Kaggle's Nvidia Tesla P100 GPU for faster training and evaluation.
 ### Pre-Requisites
 For running the notebook on your local machine, following pre-requisites must be satisfied:
 - NumPy
