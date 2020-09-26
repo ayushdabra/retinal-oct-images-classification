@@ -90,6 +90,7 @@ A detailed layout of the model is available <a href= "/assets/model_plot.png">he
 The `baseline_training_csv.log` and `finetuned_training_csv.log` files contain epoch wise training details of the baseline model and the finetuned model respectively.
 
 ### Evaluation on Test Dataset
+The model performed really well and achieved an accuracy of 98.96 % on the test set.
 #### Confusion Matrix
 ![Confusion Matrix](/assets/confusion_matrix.jpeg)
 
