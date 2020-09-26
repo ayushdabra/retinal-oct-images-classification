@@ -76,26 +76,34 @@ Tranfer learning has been used on VGG16 CNN Architecture pre-trained on ImageNet
 
 A detailed layout of the model is available <a href= "/assets/model_plot.png">here.</a>
 
-### Baseline Training Results
-The model achieved an accuracy of 84.96%, 87.5%, 85.54% on train dataset, validation dataset and test dataset respectively.
-<p><img src= "/assets/plot_acc_loss.png"></p>
+### Training Results
+|Model|Epochs|Train Accuracy|Train Loss| Val Accuracy| Val Loss |
+| :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
+| Baseline | 10 | 85.16 % | 0.4144 | 84.37 % | 0.3519 |
+| Finetuned | 10 | 97.01 % | 0.086 | 100 % | 0.0309|
 
-The `training_csv.log` file contains epoch wise training details.
+| ![](/assets/baseline_acc_epoch.jpeg) | ![](/assets/baseline_loss_epoch.jpeg) |
+| :-----: | :-----: |
+| ![](/assets/finetuned_acc_epoch.jpeg) | ![](/assets/finetuned_loss_epoch.jpeg) |
+
+The `baseline_training_csv.log` and `finetuned_training_csv.log` files contain epoch wise training details of the baseline model and the finetuned model respectively.
 
 ### Evaluation on Test Dataset
-![Confusion Matrix](/assets/confusion_matrix.png)
+* #### Confusion Matrix
+![Confusion Matrix](/assets/confusion_matrix.jpeg)
 
+* #### Classification Report
 ```
               precision    recall  f1-score   support
 
-         CNV       0.73      0.99      0.84       242
-         DME       0.99      0.82      0.89       242
-      DRUSEN       0.99      0.61      0.76       242
-      NORMAL       0.83      1.00      0.91       242
+         CNV       0.96      1.00      0.98       242
+         DME       1.00      1.00      1.00       242
+      DRUSEN       1.00      0.96      0.98       242
+      NORMAL       1.00      1.00      1.00       242
 
-    accuracy                           0.86       968
-   macro avg       0.89      0.86      0.85       968
-weighted avg       0.89      0.86      0.85       968
+    accuracy                           0.99       968
+   macro avg       0.99      0.99      0.99       968
+weighted avg       0.99      0.99      0.99       968
 ```
 
 ## Visualization of Activations of Layers
