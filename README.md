@@ -98,6 +98,14 @@ The `training_csv.log` file contains epoch wise training details.
 weighted avg       0.89      0.86      0.85       968
 ```
 
+## Visualization of Activations of Layers
+|![](/assets/1_block1_conv1.jpeg) block1_conv1|![](/assets/4_block2_conv1.jpeg) block2_conv1|
+:-------------------------:|:-------------------------:
+![](/assets/7_block3_conv1.jpeg) **block3_conv1**|![](/assets/11_block4_conv1.jpeg) **block4_conv1**
+![](/assets/15_block5_conv1.jpeg) **block5_conv1**|![](/assets/16_block5_conv2.jpeg) **block5_conv2**
+
+Activation Maps of all layers of the model are available <a href= "/assets/activation_maps">here.</a>
+
 ## References
 * Data- https://data.mendeley.com/datasets/rscbjbr9sj/2
 * Kermany, Daniel; Zhang, Kang; Goldbaum, Michael (2018), “Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification”, Mendeley Data, V2, doi: 10.17632/rscbjbr9sj.2
