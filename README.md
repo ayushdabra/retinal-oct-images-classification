@@ -13,6 +13,7 @@ Retinal Optical Coherence Tomography (OCT) is an imaging technique used to captu
 The <a href= "/vgg16-for-retinal-oct-images-dataset.ipynb">`vgg16-for-retinal-oct-images-dataset.ipynb`</a> notebook can be directly run on Kaggle after loading the dataset in the Kaggle Kernel. Use Kaggle's Nvidia Tesla P100 GPU for faster training and evaluation.
 ### Pre-Requisites
 For running the notebook on your local machine, following pre-requisites must be satisfied:
+- Python3
 - NumPy
 - Pandas
 - Scikit-learn
