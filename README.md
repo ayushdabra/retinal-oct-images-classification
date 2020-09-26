@@ -91,10 +91,12 @@ The `baseline_training_csv.log` and `finetuned_training_csv.log` files contain e
 
 ### Evaluation on Test Dataset
 The model performed really well and achieved an accuracy of 98.96 % on the test set.
-#### Confusion Matrix
-![Confusion Matrix](/assets/confusion_matrix.jpeg)
 
-#### Classification Report
+**Confusion Matrix:**
+
+![](/assets/confusion_matrix.jpeg)
+
+**Classification Report:**
 ```
               precision    recall  f1-score   support
 
